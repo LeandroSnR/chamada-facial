@@ -1,0 +1,7 @@
+# Cadastro — script offline para gerar encodings a partir das fotos oficiais
+# Roda uma vez por aluno/turma (ou quando a foto for atualizada).
+# Instalação: pip install -r requirements.txt
+
+opencv-python==4.10.0.84
+face_recognition==1.3.0
+numpy==1.26.4

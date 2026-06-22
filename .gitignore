@@ -1,0 +1,57 @@
+# ============================================
+# DADOS SENSÍVEIS DE ALUNOS — NUNCA versionar
+# ============================================
+cadastro/fotos_oficiais/*
+!cadastro/fotos_oficiais/.gitkeep
+
+servidor/dados/encodings/*
+!servidor/dados/encodings/.gitkeep
+
+servidor/dados/db/*
+!servidor/dados/db/.gitkeep
+
+*.jpg
+*.jpeg
+*.png
+*.pkl
+*.db
+*.sqlite3
+
+# ============================================
+# Segredos e configuração local
+# ============================================
+.env
+.env.local
+*.key
+api_key.txt
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ============================================
+# Tailscale / infra local
+# ============================================
+infra/*.local.yaml
+
+# ============================================
+# Sistema / editor
+# ============================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

@@ -10,6 +10,10 @@ servidor/dados/encodings/*
 servidor/dados/db/*
 !servidor/dados/db/.gitkeep
 
+# Arquivos de modelo DNN do OpenCV (baixados via script, não versionados)
+servidor/app/modelos_dnn/*
+!servidor/app/modelos_dnn/.gitkeep
+
 *.jpg
 *.jpeg
 *.png

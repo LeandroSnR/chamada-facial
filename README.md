@@ -9,14 +9,14 @@ Sistema de registro de presença escolar usando reconhecimento facial, com arqui
 Durante os primeiros 15 minutos da aula, uma câmera apontada para a sala captura frames periodicamente. Cada frame é processado pelo servidor, que detecta e reconhece os rostos presentes, comparando-os com o banco de encodings da turma. Alunos reconhecidos em qualquer frame da janela são marcados como **presentes**; os demais ficam como **ausentes** até confirmação manual do professor.
 
 ```
-┌────────────────┐        rede privada         ┌──────────────────────┐
-│  PC da sala     │ ────── (Tailscale) ───────► │  Servidor             │
-│  (cliente)      │ ◄──────────────────────────  │  (processamento)     │
-│                 │                              │                      │
-│  - Captura      │                              │  - Detecção de rosto │
-│    frames       │                              │  - Reconhecimento    │
-│  - Sem IA local │                              │  - Registro de       │
-│                 │                              │    presença          │
+┌────────────────┐        rede privada          ┌──────────────────────┐
+│  PC da sala    │ ────── (Tailscale) ───────►  │  Servidor            │
+│  (cliente)     │ ◄──────────────────────────  │  (processamento)     │
+│                │                              │                      │
+│  - Captura     │                              │  - Detecção de rosto │
+│    frames      │                              │  - Reconhecimento    │
+│  - Sem IA local│                              │  - Registro de       │
+│                │                              │    presença          │
 └────────────────┘                              └──────────────────────┘
 ```
 
